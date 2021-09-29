@@ -1,0 +1,362 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Estilos Gerais
+/* 2. Menu Login
+/* 3. Menu Buscar com Logo
+/* 4. Menu de Navegação
+/* 5. Conteúdo - Home
+/* 6. Organizar por
+/* 7. Filtro lateral
+/* 8. Conteúdo -Produtos
+/* 9. Footer
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root{
+    --ff-primary: 'Open Sans', sans-serif;
+    --clr-red:#D32822;
+    --clr-light-blue: #66BDB3;
+    --clr-orange: #D6640B;
+    --clr-black: #000000;
+    --clr-dark-gray: #303030;
+    --clr-gray: #474A51;
+    --clr-light-gray: #c2c2c2;
+    --clr-lighter-gray: #d4d3d3;
+    --clr-white: #f5f5f5;
+}
+
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+
+body{
+	background-color: var(--clr-white);
+}
+
+a, 
+a:hover, /* quando o mouse está em cima*/
+a:active, /* no momento que o link é clicado*/
+a:visited{ /* quando link é visitado*/
+    text-decoration: none;
+
+}
+
+/**********************************/
+/* 2. Menu Login
+/**********************************/
+
+.login-bg{
+	background-color: var(--clr-dark-gray);
+    display: block;
+}
+
+.login-bg a{
+    font-weight: 800;
+}
+
+.login{
+    align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	flex-wrap: wrap;
+    color: var(--clr-white);
+    height: 1.5em;
+    font-size: 0.8em;
+    width: 980px;
+    font-family: var(--ff-primary);
+}
+
+.login-list{
+    display: flex;
+	flex-wrap: wrap;
+    float: right;
+}
+
+.login-link{
+    padding: 20px 10px;
+    color: var(--clr-white);
+    text-decoration: underline;
+}
+
+
+/**********************************/
+/* 3. Menu Buscar com Logo
+/**********************************/
+
+.logo-busca-container{
+    width: 980px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.logo{
+    margin-top: 2%;
+}
+
+.busca{
+    margin-top: 2%;
+}
+
+.campo-busca{
+    width:450px;
+    height: 40px;
+    font-family: var(--ff-primary);
+    margin-right: -5px;
+}
+
+.buscar{
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border: 10px;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    margin-left: -5px;
+    font-weight: 800;
+}
+
+
+/**********************************/
+/* 4. Menu de Navegação
+/**********************************/
+
+.nav-bg{
+    background-color: var(--clr-red);
+    height: 50px;
+    font-family: var(--ff-primary);
+}
+
+.nav{
+    width: 980px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.nav-list{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 1rem;
+    font-size: 1em;
+}
+
+.nav-link{
+    color: var(--clr-white);
+    padding-right: 50px;
+}
+
+
+/**********************************/
+/* 5. Conteúdo - Home
+/**********************************/
+
+.home-container{
+    width: 980px;
+    margin:0 auto;
+	display: flex;
+	flex-wrap: wrap;   
+}
+
+.nav-lateral{
+    display: flex;
+    width: 200px;
+    height: 400;
+    justify-content: start;
+    margin-top: 25px;
+    background-color: var(--clr-light-gray);
+    font-family: var(--ff-primary);
+}
+
+.nav-lateral ul{
+    margin: 2.5em 2em;
+}
+
+.nav-lateral li{
+    list-style: circle;
+    margin: 1.5em 0;
+    font-size: 20px
+}
+
+.nav-lateral-link{
+    color: var(--clr-dark-gray);
+}
+
+.home-img img{
+    margin-left: 10%;
+    margin-top: 25px;
+    height: 400px;
+}
+
+.home-texto{
+    flex-wrap: wrap;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    font-family: var(--ff-primary);
+}
+
+.home-texto h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.home-texto p{
+    font-size: 1.1em;
+}
+
+
+/**********************************/
+/* 6. Organizar por
+/**********************************/
+
+.seletor-container{
+    width: 670px;
+    display: inline-flex;
+    justify-content: end;
+    margin: 0 auto;
+    margin-left: 30%;
+}
+
+.ordenar-por{
+    font-family: var(--ff-primary);
+    font-size: 0.7em;
+    display: inline-block;
+    color: var(--clr-gray);
+    margin: 15px 0 2px 10em;
+    text-transform: uppercase;
+}
+
+.seletor{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0 5px 10px;
+    background-color: var(--clr-white);
+    border-color: var(--clr-light-gray);
+    height: 25px;
+}
+
+.conteudo-container{
+    display: flex;
+    max-width: 980px;
+    margin:0 auto;
+}
+
+
+/**********************************/
+/* 7. Filtro lateral
+/**********************************/
+
+.filtro-lateral{
+    width: 200px;
+    height: 400px;
+    border: solid 1px var(--clr-light-gray);
+    margin-top: -15px;
+    font-family: var(--ff-primary);
+}
+
+.filtro-lateral-texto{
+    margin: 20px 20px 10px;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.filtro-lateral h2{
+    color: var(--clr-red);
+}
+
+.filtro-lateral h3{
+    color: var(--clr-light-blue);
+}
+
+.filtro-lateral li{
+    margin: 0 20px;
+    list-style: circle;
+    font-size: 0.9em;
+    color: var(--clr-dark-gray);
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+
+/**********************************/
+/* 8. Conteúdo - Produtos
+/**********************************/
+
+.produtos-container{
+    max-width: 980px;
+	margin:0 auto;
+	display: flex;
+	flex-wrap: wrap;
+    font-family: var(--ff-primary);
+}
+
+.produtos{
+   	margin: 10px 10px;
+}
+
+.img-produto{
+    border: var(--clr-light-gray) solid 1px ;
+}
+
+.nome-produto{
+    font-size: 1em;
+	text-align: center;
+	margin: 10px 0 5px 0;
+    text-transform: uppercase;
+    color:var(--clr-gray);
+}
+
+
+.preco-para{
+    font-size: 1.3em;
+	text-align: center;
+    margin: 10px auto;
+    color: var(--clr-red);
+    font-weight: 800;
+}
+
+.comprar-produto{
+    margin: 0 auto;
+    background-color: var(--clr-light-blue);
+    color: var(--clr-white);
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border: 5px;
+    border-radius: 5px;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+
+/**********************************/
+/* 9. Footer
+/**********************************/
+
+.footer{
+    width: 980px;
+    height: 200px;
+    background-color: var(--clr-red);
+    margin: 20px auto;
+}

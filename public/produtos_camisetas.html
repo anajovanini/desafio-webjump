@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <title>Webjump - Desafio Frontend</title>
+  </head>
+
+  <body>
+    <header> <!--área de login e área de busca/logo-->
+        <section> <!--área de login-->
+            <div class="login-bg"> <!-- background área de login-->
+                <div class="login"> <!--menu de login-->
+                    <nav>
+                        <ul class="login-list">
+                            <li><a href="url_página" class="login-link">Acesse sua Conta</a></li>
+                            <p>ou</p>
+                            <li><a href="url_página" class="login-link">Cadastre-se</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div>
+        </section>
+        
+        <section> <!--área campo de busca e logo-->
+            <div class="logo-busca-container"> <!--área do logo-->
+                <div class="logo">
+                    <img src="https://webjump.com.br/wp-content/uploads/2018/09/logo_webjump.png" alt="Webjump logo">
+                </div>
+                <div class="busca"><!--campo de busca-->
+                    <form action="">
+                        <input type="text" placeholder="Busque aqui o que procura.." class="campo-busca">
+                        <button type="submit" class="buscar">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section> 
+    </header>
+
+    <section> <!--área de navegação-->
+        <div class="nav-bg"> <!--background área de navegação-->
+            <div class="nav"> <!--área de navegação-->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+                        <li><a href="produtos_camisetas.html" class="nav-link">Camisetas</a></li>
+                        <li><a href="produtos_calcas.html" class="nav-link">Calças</a></li>
+                        <li><a href="produtos_sapatos.html" class="nav-link">Sapatos</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+    </section>
+
+        <section class="seletor-container"> <!--área do ordenar por-->
+            <span class="ordenar-por">ordenar por</span>
+            <select name="select" class="seletor">
+                <option value="opcao1">Menor preço</option>
+                <option value="opcao2">Maior preço</option>
+            </select>
+        </section>     
+
+    <main class="conteudo-container"> <!--conteúdo da página-->
+        <aside> <!--filtro lateral-->
+            <div class="filtro-lateral">
+                <h2 class="filtro-lateral-texto">Filtre por</h2>
+                <h3 class="filtro-lateral-texto">Categorias</h3>
+                <ul>
+                    <li>Roupas</li>
+                    <li>Sapatos</li>
+                    <li>Acessórios</li>
+                </ul>
+                <h3 class="filtro-lateral-texto">Cores</h3>
+                <ul>
+                    <li>preto</li>
+                    <li>cinza</li>
+                    <li>rosa</li>
+                </ul>
+                <h3 class="filtro-lateral-texto">Tipo</h3>
+                <ul>
+                    <li>Roupas</li>
+                    <li>Sapatos</li>
+                    <li>Acessórios</li>
+                </ul>
+            </div>
+        </aside>
+        <section> <!--produtos-->
+
+            <div class="produtos-container">
+                <div class="produtos">
+                    <img src="media/shirt-1.jpg" alt="Camiseta Basica" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Basica</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 39,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-2.jpg" alt="Camiseta Polo" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Polo</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 79,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-3.jpg" alt="Camiseta Long Fit" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Long Fit</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 59,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-4.jpg" alt="Camiseta Slim Fit" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Slim Fit</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 99,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-1.jpg" alt="Camiseta Basica" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Basica</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 39,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-2.jpg" alt="Camiseta Polo" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Polo</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 79,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-3.jpg" alt="Camiseta Long Fit" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Long Fit</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 59,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-4.jpg" alt="Camiseta Slim Fit" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Slim Fit</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 99,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+    
+                <div class="produtos">
+                    <img src="media/shirt-1.jpg" alt="Camiseta Basica" class="img-produto">
+                    <h2 class="nome-produto">Camiseta Basica</h2>
+                    <p class="preco-de"></p>
+                    <p class="preco-para">R$ 39,90</p>
+                    <button type="button" class="comprar-produto">Comprar</button>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
